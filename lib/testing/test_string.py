@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
+import sys
+import os
 
-from string_functions import return_string, interpolate_string
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.insert(0, project_root)
+from lib.string_functions import return_string, interpolate_string
 
 def test_return_string():
     '''in string_functions, function "return_string()" returns a variable of type str.'''
